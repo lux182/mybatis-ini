@@ -1,0 +1,14 @@
+mybatis:
+    type-aliases-package: com.example.mybatistest.mybatisdemo.bean
+#    type-handlers-package: com.example.typehandler
+    configuration:
+        map-underscore-to-camel-case: true
+        default-fetch-size: 100
+        default-statement-timeout: 30
+
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://192.168.6.81:3306/test?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+        username: root
+        password: 123456
